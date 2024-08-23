@@ -14,6 +14,7 @@
           extend: {
             colors: {
               clifford: '#da373d',
+              'greeno': '#ABEF5F',
             }
           }
         }
@@ -27,17 +28,139 @@
         .manrope{
             font-family: "Manrope", sans-serif;
         }
+        *{
+          padding: 0;
+          margin: 0;
+        }
     </style>
 </head>
 <body class="manrope">
-    <header>
-
+    <header class="container mx-auto">
+      <!-- navbar -->
+      <nav class="mt-5">
+        <div class="navbar bg-base-100 flex justify-between">
+          <!-- navbar start -->
+          <div class="navbar-start space-x-2">
+            <div class="rounded-full bg-greeno">
+              <img src="./assets/arrow-up-right-01 (1).png" alt="">
+            </div>
+            <a class="text-3xl font-extrabold">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a class="hover:font-bold">Home</a></li>
+              <li><a class="hover:font-bold">Services</a></li>
+              <li><a class="hover:font-bold">Portfolio</a></li>
+              <li><a class="hover:font-bold">Blogs</a></li>
+              <li><a class="hover:font-bold">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- navbar end -->
+          <div class="navbar-end space-x-3 hidden md:flex lg:flex">
+            <div class="flex gap-3 ">
+              <img src="./assets/Frame 2.png" alt=""><img src="./assets/Frame 3.png" alt="">
+            </div>
+            <a class="btn bg-greeno">Book Consult <img  src="./assets/arrow-up-right-01.png" alt=""></a>
+            
+          </div>
+          <!-- navbar mobile dropdown -->
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- banner section -->
+       <section>
+        <div class="my-16">
+          <div class="grid grid-cols-1-col justify-items-center">
+            <img
+              src="./assets/banner.png"
+              class="max-w-xs rounded-lg"/>
+            <div class="grid grid-cols-1-col justify-items-center gap-4">
+              <h1 class="lg:text-6xl md:text-4xl text-3xl font-bold text-center">A barn house of this design has a <br> striking appearance</h1>
+              <p class="py-6 text-center w-2/4">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+              </p>
+              <button class="btn bg-green-200">View Details <img src="./assets/arrow-up-right-01 (1).png" alt=""></button>
+            </div>
+          </div>
+        </div>
+       </section>
     </header>
-    <main>
-
+    <main class="bg-gray-200">
+      <!-- main container -->
+       <div class="container mx-auto">
+          <!-- details -->
+          <section class="grid gap-5 grid-cols-1 md:grid-cols-2 justify-stretch items-center py-24 relative">
+            <!-- details contents -->
+            <div class="space-y-3">
+              <a class="btn">About Us</a>
+              <h2 class="text-5xl font-bold text-left">We design thoughtful, liveable spaces</h2>
+              <p class="text-left text-base">The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <!-- details contents cards -->
+             <div class="p-4 shadow rounded-md bg-white flex items-center gap-4 ">
+              <div>
+                <img src="./assets/commercial.png" alt="">
+              </div>
+              <div>
+                <h4 class="text-xl font-bold">Commercial</h4>
+                <p class="text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+             </div>
+             <div class="p-4 shadow rounded-md bg-white flex items-center gap-4 ">
+              <div>
+                <img src="./assets/residential.png" alt="">
+              </div>
+              <div>
+                <h4 class="text-xl font-bold">Residential</h4>
+                <p class="text-base">The barn house captivates with its blend of rustic charm and modern.</p>
+              </div>
+             </div>
+            </div>
+            <!-- details image -->
+            <div>
+                <img src="./assets/Rectangle.png" alt="">
+            </div>
+            <img class="absolute top-9 left-0" src="./assets/Vector.png" alt="">
+          </section>
+          <!-- our work  process section -->
+           <section>
+              <!-- work tittle -->
+              <div class="grid grid-cols-1 justify-items-center items-center gap-4">
+                <a class="btn">How we works</a>
+                <h2 class="text-5xl font-bold text-center">Our Works Process</h2>
+                <p class="text-center text-base w-3/4">The barn house captivates with its blend of rustic charm and 
+                  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+                 <!--  -->
+           </section>
+       </div>
     </main>
     <footer>
-        
+        <!--  -->
     </footer>
 </body>
 </html>
