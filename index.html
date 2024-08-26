@@ -39,7 +39,7 @@
     </style>
 </head>
 <body class="manrope">
-  <header class="container mx-auto">
+  <header class="container mx-auto px-3">
     <!-- navbar -->
       <nav class="pt-5">
         <div class="navbar bg-base-100 flex justify-between">
@@ -101,7 +101,7 @@
         </div>
     </section>
   </header>
-    <main class="bg-gray-200">
+    <main class="bg-gray-200 px-3">
       <!-- main container -->
        <div class="container mx-auto">
           <!-- details -->
@@ -178,7 +178,7 @@
        </div>
     </main>
     <!-- main 2 -->
-    <main class="bg-white">
+    <main class="bg-white px-3">
       <!-- container -->
        <div class="container mx-auto my-12 py-11">
           <!-- our portfolio section -->
@@ -238,17 +238,19 @@
             modern sophistication, featuring weathered wood, sleek metal accents.</p>
           </div>
           <!-- form contents -->
-         <div class="container mx-auto">
-          <form action="">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-5  py-8">
-              <input class="p-5 rounded-3xl bg-white " type="text" placeholder="write your name" />
-              <input class="p-5 rounded-3xl bg-white " type="text" placeholder="Last Name*" />
-              <input class="p-5 rounded-3xl bg-white " type="phone number" placeholder="Phone Number*" />
-              <input class="p-5 rounded-3xl bg-white " type="email" placeholder="Email Number*" />
-              <textarea class="p-5 col-span-2 rounded-3xl bg-white w-full" placeholder="Write your message here"></textarea>
-              <div class="col-span-2 w-full"><button class="btn btn-wide bg-greeno ">Send Mail <img src="./assets/arrow-up-right-01.png" alt=""></button></div>
-            </div>
-          </form>
+         <div class="container mx-auto mt-5 px-3">
+           <div>
+            <form class="grid grid-cols-1 md:grid-cols-2 gap-4" action="">
+              <input class="p-5 w-full rounded-3xl" type="text" placeholder="first name" />
+              <input class="p-5 w-full rounded-3xl" type="text" placeholder="last name" />
+              <input class="p-5 w-full rounded-3xl" type="text" placeholder="phone number" />
+              <input class="p-5 w-full rounded-3xl" type="text" placeholder="Email Number*" />
+              <textarea class="p-5 md:col-span-2 w-full rounded-3xl" placeholder="Write your message here"></textarea>
+              <div class="flex justify-center">
+                <a class="btn bg-greeno ml-3 w-full col-span-2">Book Consult <img  src="./assets/arrow-up-right-01.png" alt=""></a>
+              </div>
+            </form>
+           </div>
          </div>  
       </div>
     </div>
